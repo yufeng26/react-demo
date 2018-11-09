@@ -2,6 +2,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## `一个简单的react项目`
 
+学习导师“DellLee”
+
 ## Available Scripts
 
 In the project directory, you can run:

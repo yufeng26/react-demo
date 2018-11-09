@@ -6,7 +6,7 @@ class Todolist extends Component {
     super(props);
     this.state = {
       inputValue:"",
-      list:["早餐", "午餐", "晚餐"],
+      list:[],
     }
     this.changeVal = this.changeVal.bind(this);
     this.delItem = this.delItem.bind(this);
