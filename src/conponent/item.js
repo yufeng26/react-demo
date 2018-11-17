@@ -6,6 +6,7 @@ class TodoItem extends Component {
         this.handleClick=this.handleClick.bind(this);
     }
     render() {
+        console.log("child-render");
         const { content , test } = this.props;
         return (
             <li onClick={this.handleClick}>
@@ -23,7 +24,8 @@ class TodoItem extends Component {
 // 子组件接收父组件数据格式验证
 TodoItem.propTypes = {
     test: PropTypes.string.isRequired,
-    content: PropTypes.string,
+    content: PropTypes.string,  
+    // content: PropTypes.oneOfType([PropTypes.string, PropTypes.number])
     deteleItem: PropTypes.func,
     xbNumber: PropTypes.number,
 }

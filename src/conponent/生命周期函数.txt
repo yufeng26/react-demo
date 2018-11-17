@@ -1,0 +1,42 @@
+生命周期函数，指在某一个时刻组件自动执行的函数（所有组件都有的属性）
+例子：render() 就是一个周期
+
+1.初始化
+constructor E6自带的函数
+
+2.挂载渲染Mounting  挂载：组件第一次被执行的时候
+
+componentWillMount  在组件即将被挂载到页面时执行
+
+render  页面挂载
+
+componentDidMount  组件被挂载到页面后时执行
+
+3.Updation 页面更新变化
+
+(1)props
+
+componentWillReceiveProps  组件接收了父级属性参数时，父组件render函数完毕后执行，第一次存在于父组件中是不会执行的
+
+shouldComponentUpdate   组件在更新之前是否需要更新 ，需要返回一个布尔值 true/false(是否要更新)
+
+componentWillUpdate   组件即将更新，在shouldComponetUpdate 之后执行（返回true的情况）
+
+render
+
+componentDidUpdate   组件更新后执行
+
+
+(2)states
+
+shouldComponentUpdate   组件在更新之前是否需要更新 ，需要返回一个布尔值 true/false(是否要更新)
+
+componentWillUpdate   组件即将更新，在shouldComponetUpdate 之后执行（返回true的情况）
+
+render
+
+componentDidUpdate   组件更新后执行
+
+4.UnMounting移出挂载
+
+componentWillUnmount   组件即将移出时执行
